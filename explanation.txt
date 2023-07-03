@@ -1,0 +1,21 @@
+Team Name: Lunatic Bytes
+Team Captain: Abdul Subhan
+
+Approach:
+Firstly, we conducted an overview of the dataset, followed by the removal of irrelevant columns from the training and testing datasets.
+ Subsequently, we performed label encoding on the categorical columns. Next, we addressed the presence of null values within the dataset. 
+Moving forward, we proceeded with text processing, which involved removing stopwords and punctuation, resulting in a cleaned text.
+ Following this, we applied count vectorization to the "keywords" column to prepare it for model training.
+ The dataset was then split into "x" and "y," where "y" included the "taxonomy" and "hcp" features. 
+We applied the train-test split to prepare the data for modeling. We constructed a model using the random forest classifier within a multi-output classifier framework. 
+The model yielded an accuracy of approximately 83%. Finally, we made predictions on the "x" test data and saved the results in a CSV file.
+
+Feature engineering:
+In the given code, feature engineering refers to dropping unnecessary columns from the dataframe.
+ This step is performed using the drop() function, which removes columns like 'BIDREQUESTIP', 'USERPLATFORMUID', 'USERZIPCODE', 'USERAGENT', and 'URL'. 
+This can be a valid preprocessing step if these columns are deemed irrelevant for the analysis or modeling task at hand.
+
+Source files and source used:
+Scikit-learn documentation 
+Colab notebook
+Data files given in the problem statement of hackathon.
